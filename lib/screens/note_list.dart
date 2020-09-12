@@ -90,9 +90,10 @@ class NoteListState extends State<NoteList> {
           navigateToDetail(Note('', '', 3, 0), 'Add Note');
         },
         tooltip: 'Add Note',
-        shape: CircleBorder(side: BorderSide(color: Colors.black, width: 2.0)),
-        child: Icon(Icons.add, color: Colors.black),
-        backgroundColor: Colors.white,
+        // shape: CircleBorder(side: BorderSide(color: Colors.black, width: 2.0)),
+        // child: Icon(Icons.add, color: Colors.black),
+        child: Icon(Icons.add),
+        // backgroundColor: Colors.white,
       ),
     );
   }
@@ -113,7 +114,8 @@ class NoteListState extends State<NoteList> {
             decoration: BoxDecoration(
                 color: colors[this.noteList[index].color],
                 border: Border.all(width: 2, color: Colors.black),
-                borderRadius: BorderRadius.circular(8.0)),
+                // borderRadius: BorderRadius.circular(8.0)),
+                borderRadius: BorderRadius.circular(6.0)),
             child: Column(
               children: <Widget>[
                 Row(
